@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medigram Chat & News Feed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">Medigram</div>
+  </nav>
+
+  <!-- Main container -->
+  <div class="container">
+    <!-- Left column for News -->
+    <div class="news-feed">
+      <h2>Latest News</h2>
+      <div id="news-cards-container" class="news-cards"></div>
+      <button id="load-more-news" class="load-more-btn">Load More</button>
+    </div>
+
+    <!-- Right column for Chat -->
+    <div class="chat-container">
+      <div id="chat-box" class="chat-box">
+        <!-- Chat messages will appear here -->
+      </div>
+      <div class="chat-input-container">
+        <input type="text" id="user-input" class="chat-input" placeholder="Type your message...">
+        <button id="send-btn" class="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>
