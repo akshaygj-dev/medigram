@@ -69,15 +69,7 @@
         // GNews API Configuration
         const GNEWS_API_KEY = '76cb5a23937720bd65df5a0dfd051d18';
 
-        const medicalQueries = [
-            'medical research',
-            'health',
-            'medical',
-            'healthcare',
-            'medical science',
-            'medicine',
-            'disease',
-        ];
+        const medicalQueries = ["Medicine", "Health", "Disease", "Treatment", "Diagnosis", "Surgery", "Therapy", "Clinical", "Recovery", "Wellness"];
 
         const randomQuery = medicalQueries[Math.floor(Math.random() * medicalQueries.length)];
         const newsUrl = `https://gnews.io/api/v4/search?q=${encodeURIComponent(randomQuery)}&max=25&apikey=${GNEWS_API_KEY}`;
